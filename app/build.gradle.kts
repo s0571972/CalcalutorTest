@@ -9,6 +9,8 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+    // Enable nicer outputs when running tests (https://github.com/radarsh/gradle-test-logger-plugin)
+    id("com.adarshr.test-logger") version "3.0.0"
 }
 
 repositories {

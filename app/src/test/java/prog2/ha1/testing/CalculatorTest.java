@@ -9,12 +9,18 @@ class CalculatorTest {
 
     @Test
     @DisplayName("should display result after adding two positive numbers")
-    void calculatorCanDoTwoPlusTwo() {
+    void testPositiveAddition() {
         Calculator calc = new Calculator();
+
         calc.pressDigitKey(2);
         calc.pressBinaryOperationKey("+");
         calc.pressDigitKey(2);
-        calc.pressEquals();
-        assertEquals("4", calc.readScreen());
+        calc.pressEqualsKey();
+
+        String expected = "4";
+        String actual = calc.readScreen();
+
+        assertEquals(expected, actual);
     }
 }
+

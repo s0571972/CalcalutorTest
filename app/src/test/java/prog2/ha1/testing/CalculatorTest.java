@@ -38,7 +38,7 @@ class CalculatorTest {
     }
 
       @Test
-    @DisplayName("should display result after pressing two time the negativeKey of positive numbers")
+    @DisplayName("should display result after pressing two time the negativeKey of a positive numbers")
     void testPressNegativeKey() {
         Calculator calc = new Calculator();
 
